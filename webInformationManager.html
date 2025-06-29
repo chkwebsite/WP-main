@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/sites_mainstyle.css">
+    <link rel="stylesheet" href="assets/css/theme-color/color.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+     <title>|| नगर पंचायत बबराला ||</title>
+     <style>
+        .vh-100{
+            height: 100vh;
+        }
+        .img_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+     </style>
+    </head>
+    <body>
+        <div class="contaner_fluid">
+            <div class="row">
+                <div class="col-sm-12 vh-100">
+                    <div class="img_center">
+                        <a href="index.html" title="Back to Home"> <img src="./assets/images/comingsoon.jpg"/></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+<!-- <script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
+<script type="text/javascript" src="assets/js/translate.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/all.min.js"></script>
+<script type="text/javascript" src="assets/css/aos/aos.js"></script>
+<script type="text/javascript" src="./assets/js/slick.js"></script>
+
+<script>
+  function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+          {pageLanguage: 'en'},
+          'google_translate_element'
+      );
+  }
+</script>
+<script type="text/javascript">
+    window.addEventListener('load', () => {
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: true,
+      mirror: false
+    });
+  });
+  </script>
+  <script type="text/javascript">
+  $(window).scroll(function() {
+    var winScrollTop = $(window).scrollTop();
+    var winHeight = $(window).height();
+    var floaterHeight = $('#floater').outerHeight(true);
+    var fromBottom = 100;
+    var top = winScrollTop + winHeight - floaterHeight - fromBottom;
+	$('#floater').css({'top': top + 'px'});
+});
+  </script>
+  <script type="text/javascript">
+    jQuery(function () {
+        initChangeStyleSheet();
+    });
+  
+    function initChangeStyleSheet() {
+        var folder_path = 'assets/css/theme-color/';
+        var selector = 'head link[href$="color.css"]';
+        var color = sessionStorage.getItem('ajwebskin');
+  
+  
+        if (color == null) {
+            selector = 'head link[href$="color.css"]';
+        }
+        else {
+            $(selector).attr('href', folder_path +  color );
+        }
+        $('.default-color').click(function () {
+            $(selector).attr('href', folder_path + 'color.css');
+            sessionStorage.setItem('ajwebskin', 'color.css');
+        });
+        $('.black-color').click(function () {
+            $(selector).attr('href', folder_path + 'black-color.css');
+            sessionStorage.setItem('ajwebskin', 'black-color.css');
+        });
+        $('.red-color').click(function () {
+            $(selector).attr('href', folder_path + 'red-color.css');
+            sessionStorage.setItem('ajwebskin', 'red-color.css');
+        });
+        $('.pink-color').click(function(){
+            $(selector).attr('href', folder_path + 'pink-color.css');
+            sessionStorage.setItem('ajwebskin', 'pink-color.css')
+        })
+        $('.yellow-color').click(function () {
+            $(selector).attr('href', folder_path + 'yellow-color.css');
+            sessionStorage.setItem('ajwebskin', 'yellow-color.css');
+        });
+        $('.bluegreen-color').click(function () {
+            $(selector).attr('href', folder_path + 'bluegreen-color.css');
+            sessionStorage.setItem('ajwebskin', 'bluegreen-color.css');
+  
+        });
+        $('.navyblue-color').click(function () {
+            $(selector).attr('href', folder_path + 'navyblue-color.css');
+            sessionStorage.setItem('ajwebskin', 'navyblue-color.css');
+        });
+        $('.purple-color').click(function () {
+            $(selector).attr('href', folder_path + 'purple-color.css');
+            sessionStorage.setItem('ajwebskin', 'purple-color.css');
+        });
+  
+    }
+  </script>
+  <script>
+    $(document).ready(function(){
+  $('ul.top_h li a').click(function(){
+    $('li a').removeClass("active");
+    $(this).addClass("active");
+});
+});
+  </script>
+  <script>
+    $(".slick-slider").slick({
+    slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: true,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 4
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 1
+            }
+        }]
+  });
+  </script>
+   <script>
+    $(".photo_gallery_slick-slider").slick({
+    slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: true,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 4
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 1
+            }
+        }]
+  });
+  </script>
+  <script>
+    $(".news_slick-slider").slick({
+    slidesToShow: 2,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        arrows: true,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 4
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 1
+            }
+        }]
+  });
+  </script>
+  <script>
+    $(".govt_logo_slick-slider").slick({
+    slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: false,
+        autoplaySpeed: 5000,
+        arrows: true,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 4
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 1
+            }
+        }]
+  });
+  </script>
+  <script>
+    // Lightbox Gallery
+
+// query selectors
+const lightboxEnabled = document.querySelectorAll('.lightbox-enabled');
+const lightboxArray = Array.from(lightboxEnabled);
+const lastImage = lightboxArray.length-1;
+const lightboxContainer = document.querySelector('.lightbox-container');
+const lightboxImage = document.querySelector('.lightbox-image');
+const lightboxBtns = document.querySelectorAll('.lightbox-btn');
+const lightboxBtnRight = document.querySelector('#right');
+const lightboxBtnLeft = document.querySelector('#left');
+const close = document.querySelector('#close');
+let activeImage;
+// Functions
+const showLightBox = () => {lightboxContainer.classList.add('active')}
+
+const hideLightBox = () => {lightboxContainer.classList.remove('active')}
+
+const setActiveImage = (image) => {
+lightboxImage.src = image.dataset.imgsrc;
+activeImage= lightboxArray.indexOf(image);
+}
+
+const transitionSlidesLeft = () => {
+  lightboxBtnLeft.focus();
+  $('.lightbox-image').addClass('slideright'); 
+   setTimeout(function() {
+  activeImage === 0 ? setActiveImage(lightboxArray[lastImage]) : setActiveImage(lightboxArray[activeImage-1]);
+}, 250); 
+
+
+  setTimeout(function() {
+    $('.lightbox-image').removeClass('slideright');
+}, 500);   
+}
+
+const transitionSlidesRight = () => {
+ lightboxBtnRight.focus();
+$('.lightbox-image').addClass('slideleft');  
+  setTimeout(function() {
+   activeImage === lastImage ? setActiveImage(lightboxArray[0]) : setActiveImage(lightboxArray[activeImage+1]);
+}, 250); 
+  setTimeout(function() {
+    $('.lightbox-image').removeClass('slideleft');
+}, 500);  
+}
+
+const transitionSlideHandler = (moveItem) => {
+  moveItem.includes('left') ? transitionSlidesLeft() : transitionSlidesRight();
+}
+
+// Event Listeners
+lightboxEnabled.forEach(image => {
+   image.addEventListener('click', (e) => {
+    showLightBox();
+    setActiveImage(image);
+    })                     
+    })
+lightboxContainer.addEventListener('click', () => {hideLightBox()})
+close.addEventListener('click', () => {hideLightBox()})
+lightboxBtns.forEach(btn => {
+btn.addEventListener('click', (e) => {
+e.stopPropagation();
+  transitionSlideHandler(e.currentTarget.id);
+})
+})
+
+lightboxImage.addEventListener('click', (e) => {
+e.stopPropagation();
+
+})
+  </script>
+  <script>
+    $(document).ready(function(){
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 50) {
+      $("#scroll").fadeIn();
+      } else {
+      $("#scroll").fadeOut();
+    }
+  });
+  
+  $("#scroll").click(function(){
+    $("html, body").animate({ scrollTop: 0 }, 900);
+    return false;
+  });
+});
+
+
+
+  </script>
+    </body>
+</html>
