@@ -638,9 +638,22 @@ a#scroll {
   background: #000;
 }
 @media (max-width:767px){
-  .m-h{
+  /* .m-h{
     display: none;
-  }
+  } */
+  .disp_flex .disp_flex {
+    display: flex;
+    justify-content: flex-start;
+    gap: 12px;
+    align-items: center;
+    flex-direction: column;
+}
+.disp_flex .disp_flex h4{
+  text-align: center;
+}
+.disp_flex .disp_flex span{
+  display: none;
+}
   ul.footer_ul {
     flex-direction: column;
 }
