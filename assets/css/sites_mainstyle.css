@@ -612,9 +612,11 @@ a#scroll {
   text-align: center;
 }
 .td{
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
+  text-align: center;
+  vertical-align: middle;
 }
 .rule_card{
   border: 1px solid transparent;
@@ -636,6 +638,9 @@ a#scroll {
   background: #000;
 }
 @media (max-width:767px){
+  .m-h{
+    display: none;
+  }
   ul.footer_ul {
     flex-direction: column;
 }
@@ -659,11 +664,14 @@ a#scroll {
     display: block;
   }
   .logo_height{
-    height:auto;
+    height:70px;
   }
   .logo_width{
-    width: 100%;
+    width: 70px;
   }
+  /* .logo_width-1{
+    width: 100%;
+  } */
 }
 
 
