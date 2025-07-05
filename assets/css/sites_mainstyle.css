@@ -65,6 +65,10 @@ button.nav-link{
   padding-right: 10px;
   padding-left: 15px;
 }
+.navbar-expand-md .navbar-nav.ms-auto .nav-link {
+  padding-right: 7px;
+  padding-left: 7px;
+}
 .carousel-indicators [data-bs-target] {
   background-color: red;
   height: 8px;
@@ -783,3 +787,105 @@ a#scroll {
   display: flex;
   margin-left: 9px;
 }
+
+
+
+
+
+
+/*---------------Start Google Translator-----------------------------------------------*/
+
+.right-side-pull {
+  display: flex;
+  align-items: center;
+}
+
+.goog-te-gadget .goog-te-combo {
+  margin: 0 !important;
+  height: 40px;
+  border-radius: 5px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  background: #0000000a;
+  padding-left: 5px;
+  color: #fff;
+}
+
+body>.skiptranslate,
+.goog-logo-link,
+.gskiptranslate,
+.goog-te-gadget span,
+.goog-te-banner-frame,
+#goog-gt-tt,
+.goog-te-balloon-frame,
+div#goog-gt- {
+  display: none!important;
+}
+
+.goog-te-gadget {
+  color: transparent!important;
+  font-size: 0px;
+}
+
+#google_translate_element select {
+  color: #191919;
+  border: none;
+  font-weight: bold;
+  border-radius: 3px;
+  padding: 8px 12px;
+  background: #fff;
+  border-radius: 0;
+  border: 0;
+  outline: none;
+  width: 154px;
+}
+
+.skiptranslate.goog-te-gadget {
+  height: 40px;
+  overflow: hidden;
+  background: transparent;
+  width: 130px;
+}
+
+.skiptranslate.goog-te-gadget span {
+  display: none;
+}
+
+body>.skiptranslate {
+  display: none;
+}
+
+body {
+  top: 0 !important;
+}
+
+.goog-te-gadget .goog-te-combo option {
+  color: #000;
+  display: none;
+}
+
+.goog-te-gadget .goog-te-combo option[value="hi"],
+.goog-te-gadget .goog-te-combo option[value="en"],
+.goog-te-gadget .goog-te-combo option[value="ur"],
+.goog-te-gadget .goog-te-combo option[value="bho"],
+.goog-te-gadget .goog-te-combo option[value="gu"],
+.goog-te-gadget .goog-te-combo option[value="bn"] {
+  display: block !important;
+}
+
+.marquee_ul li {
+  border-bottom: 1px dashed #c1c1c1;
+  margin-bottom: 15px;
+}
+
+.marquee_ul li:last-child {
+  margin-bottom: 0;
+}
+
+.marquee_ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+
+/*---------------End Google Translator-----------------------------------------------*/

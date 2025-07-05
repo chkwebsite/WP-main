@@ -22,6 +22,14 @@
     height: 100%;
 }
      </style>
+<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+     <!-- <script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
+     <script type="text/javascript" src="assets/js/translate.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+     <script type="text/javascript" src="assets/js/all.min.js"></script>
+     <script type="text/javascript" src="assets/css/aos/aos.js"></script>
+     <script type="text/javascript" src="./assets/js/slick.js"></script>
 </head>
 <body>
     <section class="header">
@@ -44,25 +52,54 @@
                           </li>
                         </ul>
                         <ul class="navbar-nav ms-auto top_h d-flex">
-                            <!-- <li class="nav-item">
-                                <a class="nav-link" href="javascript:void(0)">A-</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0)">A</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="javascript:void(0)">A+</a>
-                            </li> -->
                             <li class="center"><img src="./assets/images/language_icon.png" alt=""></li>
                             <li class="nav-item">
-                              
-                              <div id="google_translate_element"></div>
-                              
-                              <!-- <select class="form-select border-0 outers goog-te-combo" aria-label="Language Translate Widget">
-                                    <option value="en">English</option>
-                                    <option value="hi">Hindi</option>
-                                 </select> -->
+                              <div class="language-section">
+                                <div class="right-side-pull">
+                                    <div id="google_translate_element"></div>
+
+                                    <script type="text/javascript">
+                                        function googleTranslateElementInit() {
+                                            new google.translate.TranslateElement({
+                                                pageLanguage: 'hi',
+                                                autoDisplay: 'true',
+                                                includedLanguages: 'en,hi,', // <- remove this line to show all language
+                                                layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
+                                            }, 'google_translate_element');
+                                        }
+                                    </script>
+
+                                    <!-- <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
+
+                                </div>
+                            </div>
                             </li>
+                            
+                            <li class="nav-item">
+                              <a class="nav-link" href="javascript:void(0)">
+                                <i class="bi bi-facebook"></i>
+                              </a>
+                          </li>
+                          <li class="nav-item">
+                          <a class="nav-link" href="javascript:void(0)">
+                            <i class="bi bi-instagram"></i>
+                          </a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="javascript:void(0)">
+                                <i class="bi bi-twitter"></i>
+                              </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)">
+                              <i class="bi bi-youtube"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="javascript:void(0)">
+                            <i class="bi bi-google-play"></i>
+                          </a>
+                      </li>
                         </ul>
                       </div>
                     </div>
@@ -166,7 +203,7 @@
         
     
     </section>
-     <section class="">
+  <section class="">
         <div class="contaner_fluid">
             <div class="row m-0">
                 <div class="col-sm-12 vh-100">
@@ -253,25 +290,9 @@
           </div> 
         </div>
       </div>
-    </section>  <div id="floater">
-      <div class="dis_flx_soc">
-        <a href="#"> <img src="./assets/images/facebook-icon.png" alt=""> </a>
-        <a href="#"> <img src="./assets/images/insta-icon.png" alt=""> </a>
-        <a href="#"> <img src="./assets/images/twitter-icon.png" alt=""> </a>
-        <a href="#"> <img src="./assets/images/youtube-icon.png" alt=""> </a>
-        <a href="#"> <img src="./assets/images/playstore-icon.png" alt=""> </a>
-      </div>
-    </div>
+    </section>  
     <a href="#" id="scroll" style="display: none;"><span></span></a>
 </body>
-<script type="text/javascript" src="assets/js/jquery.min.js"></script>
-<!-- <script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
-<script type="text/javascript" src="assets/js/translate.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="assets/js/all.min.js"></script>
-<script type="text/javascript" src="assets/css/aos/aos.js"></script>
-<script type="text/javascript" src="./assets/js/slick.js"></script>
 
 <script>
   function googleTranslateElementInit() {
