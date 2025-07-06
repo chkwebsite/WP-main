@@ -36,6 +36,8 @@
 }
 ul.top_h li a {
   position: relative;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 ul.top_h li a.active {
   font-weight: 500;
