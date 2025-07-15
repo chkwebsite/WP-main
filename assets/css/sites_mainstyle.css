@@ -444,7 +444,7 @@ nav.mt-75 button.nav-link.active {
     padding: 0px;
     margin: 0px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 ul.footer_ul li{
@@ -644,6 +644,12 @@ a#scroll {
   background: #000;
 }
 @media (max-width:767px){
+  ul.footer_ul {
+    align-items: flex-start;
+  }
+  ul.footer_ul li::after {
+    width: 0px;
+}
   /* .m-h{
     display: none;
   } */
